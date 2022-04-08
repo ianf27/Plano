@@ -67,7 +67,7 @@ li img{
 }
 
 figure img{
-    width: 70px;
+    width: 140px;
     align-self: center;
 }
 
@@ -102,4 +102,14 @@ h1{
 .L3{
     color: #F27D52;
     font-size: x-large;
+}
+
+.listas h2{
+    margin-bottom: 7%;
+   
+}
+
+.listas li{
+    margin-bottom: 4%;
+    list-style: circle;
 }
