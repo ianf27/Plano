@@ -69,13 +69,14 @@ li img{
 figure img{
     width: 140px;
     align-self: center;
+    margin-left: 5%;
 }
 
 h1{
     color: #BF665E;
     font-size: xx-large;
     font-weight: bold;
-    margin-left: 2%;
+    margin-left: 8%;
     margin-top: 2%;
 }
 
@@ -83,6 +84,8 @@ h1{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .listas div{
@@ -93,6 +96,8 @@ h1{
     color: #253659;
     font-size: x-large;
 }
+
+
 
 .L2{
     color: #04BF9D;
@@ -105,11 +110,25 @@ h1{
 }
 
 .listas h2{
-    margin-bottom: 7%;
-   
+    margin-bottom: 15px;
 }
 
 .listas li{
     margin-bottom: 4%;
     list-style: circle;
+    font-weight: bold;
+}
+
+.div_graficos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 60px;
+    margin-top: 20px;
+}
+
+canvas{
+    width: auto;
+    max-width:600px;
 }

@@ -1,20 +1,44 @@
-var xValues = ["Fixos" , "Investimentos" , "Lazer"];
-var yValues = [70 , 20 , 10];
-var colors = ["#253659" , "#F27D52" , "#04BF9D"];
+var xValues = ["Gastos Fixos", "Investimentos", "Lazer"];
+var yPlanValues = [70,20, 10];
+var yRealValues = [60, 5, 35];
+var barColors = [
+  "#253659",
+  "#04BF9D",
+  "#F27D52",
+];
 
-new Chart("myChrat" , {
-    type: "doughnut",
+new Chart("Planejamento", {
+  type: "pie",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yPlanValues
+    }]
+  },
+  options: {
+    title: {
+      display: true,
+      text: "Planejamento"
+    }
+  }
+});
+
+new Chart("Realidade", {
+    type: "pie",
     data: {
-        labels: xValues,
-        datasets: [{
-            backgroundColor: colors,
-            data: yValues
-        }]
+      labels: xValues,
+      datasets: [{
+        backgroundColor: barColors,
+        data: yRealValues
+      }]
     },
     options: {
-        title: {
-            display: true,
-            text: "Planejamento"
-        }
+      title: {
+        display: true,
+        text: "Realidade",
+      }
     }
-})
+  });
+  
+
