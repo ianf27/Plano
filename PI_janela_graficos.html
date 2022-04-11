@@ -5,6 +5,8 @@
             Meu planajamento
         </title>
         <link rel="stylesheet" type="text/css" href="teste_css_pi.css" media="screen"> 
+        <script src="graficos.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
     </head>
     <body>
 
@@ -19,6 +21,31 @@
             </nav>
             </header>
            <h1>Meu plano</h1>
+           
+           <canvas id="myChart" style="width: 100%; max-width: 600px;"></canvas>
+           
+            <script>
+                var xValues = ["Fixos" , "Investimentos" , "Lazer"];
+                var yValues = [70 , 20 , 10];
+                var colors = ["#253659" , "#F27D52" , "#04BF9D"];
+
+                new Chart("myChrat" , {
+                    type: "doughnut",
+                    data: {
+                        labels: xValues,
+                        datasets: [{
+                            backgroundColor: colors,
+                            data: yValues
+                        }]
+                    },
+                    options: {
+                        title: {
+                            display: true,
+                            text: "Planejamento"
+                        }
+                    }
+})
+            </script>
 
            <div class="listas">
                <div class="L1">
