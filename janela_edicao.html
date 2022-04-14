@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Meu planajamento
+        </title>
+        <link rel="stylesheet" type="text/css" href="teste_css_pi.css" media="screen"> 
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    </head>
+    <body>
+
+           <header>
+            
+            <figure><a href=""><img src="logo_Plano.png" alt="logo" id="logo"></a></figure>
+            <nav class="menu">
+                <li > <a href="" id="selecionado"> Editar </a> </li>
+                <li > <a href="janela_plano.html" > Meu plano </a> </li>
+                <li > <a href="" >  Sobre </a> </li>
+                <li > <a href= "" > <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__480.png" alt="perfil" id="perfli"> </a> </li>
+            </nav>
+            </header>
+           <h1>Meu plano</h1>
+           
+          <div class="div_graficos">
+            <canvas id="planEdicao" ></canvas>
+            <canvas id="realEdicao" ></canvas>
+        </div>
+
+           <script src="graficos.js"> </script>
+           <div class="listas">
+               <div class="L1">
+                   <h2>Gastos fixo</h2>
+                <ul>
+                    <li>Gasto 1 <button class="x" title="remover"> X </button></li>
+                    <li>Gasto 2 <button class="x" title="remover"> X </button></li>
+                    <li>Gasto 3 <button class="x" title="remover"> X </button></li>
+                    <li>Gasto 4 <button class="x" title="remover"> X </button></li>
+                    <button class="adc_item" title="adicionar item"> adicionar item </button>
+
+                </ul>
+                </div>
+                <div class="L2">
+                    <h2>Gastos lazer</h2>
+                 <ul>
+                     <li>Gasto 1 <button class="x" title="remover"> X </button></li>
+                     <li>Gasto 2 <button class="x" title="remover"> X </button></li>
+                     <li>Gasto 3 <button class="x" title="remover"> X </button></li>
+                     <li>Gasto 4 <button class="x" title="remover"> X </button></li>
+                     <button class="adc_item" title="adicionar item"> adicionar item </button>
+
+                 </ul>
+                 </div>
+                 <div class="L3">
+                    <h2>Investimento</h2>
+                 <ul>
+                     <li>Investimento 1 <button class="x" title="remover"> X </button></li>
+                     <li>investimento 2 <button class="x" title="remover"> X </button></li>
+                     <li>investimento 3 <button class="x" title="remover"> X </button></li>
+                     <li>investimento 4 <button class="x" title="remover"> X </button></li>
+                      <button class="adc_item" title="adicionar item"> adicionar item </button>
+
+                 </ul>
+                 </div>
+           </div>
+           <span>  <button class="edicao_menu">concluir</button> <button class="edicao_menu"> adicionar tabela </button> </span>
+
+           <footer>
+               <div class="div_footer">
+                   <h1>Contato</h1>
+                   <p> Telefone: 27996874594</p>
+                   <p> Email: plano@gmail.com</p>
+                   <p> Instagram: @plano </p>
+               </div>
+           </footer>
+           
+    </body>
