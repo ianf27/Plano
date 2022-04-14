@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html>
     <head>
+
         <title>
             Meu planajamento
         </title>
+        <!-- link para css e js externo -->
         <link rel="stylesheet" type="text/css" href="teste_css_pi.css" media="screen"> 
         
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     </head>
-    <body>
 
+    <body>
+            <!-- cabeçalho -->
            <header>
-            
+            <!-- logo -->
             <figure><a href=""><img src="logo_Plano.png" alt="logo" id="logo"></a></figure>
+            <!-- menu com links para as outras páginas-->
             <nav class="menu">
                 <li > <a href="janela_edicao.html" > Editar </a> </li>
                 <li > <a href="" id="selecionado"> Meu plano </a> </li>
@@ -20,15 +24,25 @@
                 <li > <a href= "" > <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__480.png" alt="perfil" id="perfli"> </a> </li>
             </nav>
             </header>
+
+
+            <!-- titulo -->
            <h1>Meu plano</h1>
-           
+
+           <!-- div onde estará os dois gráficos -->
           <div class="div_graficos">
+              <!-- espaço gráfico 1 -->
             <canvas id="planEdicao" ></canvas>
+            <!-- espaço gráfico 2 -->
             <canvas id="realEdicao" ></canvas>
         </div>
-
+        <!-- chama funçao que desenha os gráficos acima -->
            <script src="graficos.js"> </script>
+
+
+           <!-- listas cujo o titulo é o tipo de despesa e os itens são os gastos referentes a esta despesa -->
            <div class="listas">
+               <!-- Gastos fixos, em azul -->
                <div class="L1">
                    <h2>Gastos fixo</h2>
                 <ul>
@@ -38,6 +52,7 @@
                     <li>Gasto 4</li>
                 </ul>
                 </div>
+                <!-- Gastos com lazer, em laranja -->
                 <div class="L2">
                     <h2>Gastos lazer</h2>
                  <ul>
@@ -47,6 +62,7 @@
                      <li>Gasto 4</li>
                  </ul>
                  </div>
+                 <!-- Investimento, em verde agua -->
                  <div class="L3">
                     <h2>Investimento</h2>
                  <ul>
@@ -58,6 +74,7 @@
                  </div>
            </div>
 
+           <!-- Rodapé -->
            <footer>
             <div class="div_footer">
                 <h1>Contato</h1>
